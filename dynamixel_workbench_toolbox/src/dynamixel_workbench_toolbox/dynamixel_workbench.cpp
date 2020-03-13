@@ -757,7 +757,7 @@ bool DynamixelWorkbench::jointMode(uint8_t id, int32_t velocity, int32_t acceler
   result = torqueOff(id, log);
   if (result == false) return false;
 
-  result = setPositionControlMode(id, log);
+  result = setExtendedPositionControlMode(id, log);
   if (result == false) return false;
 
   if (getProtocolVersion() == 1.0)
